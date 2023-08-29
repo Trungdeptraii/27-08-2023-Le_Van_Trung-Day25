@@ -1,0 +1,63 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+.carousel{
+    position: relative;
+    /* overflow: hidden; */
+}
+/* .carousel-inner .item:not(.active){
+    display: none;
+} */
+.carousel-inner{
+    display: flex;
+    /* width: calc(1920px * 3); */
+    transition: translate 0.5s ease;
+}
+/* .carousel-inner .item{
+} */
+.carousel-inner .item img{
+    width: 100%;
+}
+.carousel-nav span{
+    position: absolute;
+    top: 50%;
+    translate:  0 -50%;
+    width: 40px;
+    height: 40px;
+    background-color:  gray;
+    cursor: pointer;
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+}
+.carousel-nav span.prev{
+    left: 10px;
+}
+.carousel-nav span.next{
+    right: 10px;
+}
+.list-dot{
+    position: absolute;
+    display: flex;
+    bottom: 10px;
+    gap: 10px;
+    left: 50%;
+    translate: -50%;
+}
+.dot{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: white;
+}
+.dot:hover{
+    cursor: pointer;
+    background-color: gold;
+}
+.dot.active{
+    background-color: gold;
+}
